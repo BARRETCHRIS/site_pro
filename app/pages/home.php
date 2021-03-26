@@ -1,4 +1,5 @@
-<div class="card mb-3 theme-light" style="max-width: 540px;">
+<main>
+               <div class="ct-home theme-light">
                     <div class="row no-gutters">
                       <div class="col-md-4">
                         <img src="medias/images/portrait_base.png" alt="portrait">
@@ -11,4 +12,5 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div>     
+          </main>
