@@ -1,14 +1,26 @@
-<div class="card mb-3">
-                    <div class="row no-gutters">
-                      <div class="col-md-4">
-                        <img src="medias/images/enteprise.svg" alt="portrait">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                    </div>
+<div class="row">
+                  <div class="img-card">
+                    <img src="medias/images/logo-flat-desolation-finitions.svg" alt="drawn portrait of christelle Barret by Crypto Beasty">
                   </div>
+                  <div class="card-body">
+                    <form action="" name="contact-form" method="POST">
+                      <fieldset>
+                        <label for="nom">Nom *</label>
+                        <input type="text" name="nom" value="<?php if(isset($_POST['nom'])) echo htmlspecialchars($_POST['nom']);?>">
+                      
+                        <label for="prenom">Prénom </label>
+                        <input type="text" name="prenom" value="<?php if(isset($_POST['prenom'])) echo htmlspecialchars($_POST['prenom']);?>">
+                      </fieldset>
+                    </form>
+                    <!--
+                    <section>
+                      <div class="typewriter tw1"><h1>christelle</h1></div>
+                      <div class="typewriter tw2"><h2>Barret</h2></div>
+                      <div class="typewriter tw3"><h4>Crypto&nbspBeasty</h4></div>
+                      <div class="typewriter tw4"><h3>web</h3></div>
+                      <div class="typewriter tw5"><h3>Developpeur</h3></div>
+                      <div class="typewriter tw6"><h3>Designer</h3></div>
+                    </section>
+                    -->
+                  </div>
+              </div>
