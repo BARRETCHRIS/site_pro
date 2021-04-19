@@ -1,4 +1,4 @@
-<main> 
+ 
     <div class="row">
         <div class="img-card">
           <img src="medias/images/dessin portraitv2-2021.svg" alt="drawn portrait of christelle Barret by Crypto Beasty">
@@ -14,4 +14,3 @@
           </section>
         </div>
     </div>   
-</main>

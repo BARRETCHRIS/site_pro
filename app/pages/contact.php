@@ -1,26 +1,37 @@
-<div class="row">
-                  <div class="img-card">
-                    <img src="medias/images/logo-flat-desolation-finitions.svg" alt="drawn portrait of christelle Barret by Crypto Beasty">
+          <div class="row">
+                  <div class="img-form">
+                    <img src="medias/images/logo_bleft.svg" alt="drawn portrait of christelle Barret by Crypto Beasty">
                   </div>
-                  <div class="card-body">
+                  <div class="card-body-form">
                     <form action="" name="contact-form" method="POST">
                       <fieldset>
-                        <label for="nom">Nom *</label>
-                        <input type="text" name="nom" value="<?php if(isset($_POST['nom'])) echo htmlspecialchars($_POST['nom']);?>">
+                        <label class="require" for="nom">Nom<span>*</span></label>
+                        <input type="text" name="nom" value="<?php if(isset($_POST['nom'])) echo htmlspecialchars($_POST['nom']);?>" required>
                       
-                        <label for="prenom">Prénom </label>
+                        <label for="prenom">Prénom</label>
                         <input type="text" name="prenom" value="<?php if(isset($_POST['prenom'])) echo htmlspecialchars($_POST['prenom']);?>">
+
+                        <label for="societe">Société</label>
+                        <input type="text" name="societe" value="<?php if(isset($_POST['societe'])) echo htmlspecialchars($_POST['societe']);?>">
+
+                        <label for="tel">Téléphone</label>
+                        <input type="text" name="tel" value="<?php if(isset($_POST['tel'])) echo htmlspecialchars($_POST['tel']);?>">
+
+                        <label class="require" for="mail">Email<span>*</span></label>
+                        <input type="text" name="mail" value="<?php if(isset($_POST['mail'])) echo htmlspecialchars($_POST['mail']);?>" required>
+
+                        <label class="require" for="objet">Objet message<span>*</span></label>
+                        <input type="text" name="objet" value="<?php if(isset($_POST['objet'])) echo htmlspecialchars($_POST['objet']);?>" required>
+
+                        <label class="require" for="message">Message<span>*</span></label>
+                        <textarea name="message" id="message" cols="30" rows="5" value="<?php if(isset($_POST['message'])) echo htmlspecialchars($_POST['message']);?>" required></textarea>
+
+                        <input type="submit" value="Envoyer">
+                        
                       </fieldset>
                     </form>
-                    <!--
-                    <section>
-                      <div class="typewriter tw1"><h1>christelle</h1></div>
-                      <div class="typewriter tw2"><h2>Barret</h2></div>
-                      <div class="typewriter tw3"><h4>Crypto&nbspBeasty</h4></div>
-                      <div class="typewriter tw4"><h3>web</h3></div>
-                      <div class="typewriter tw5"><h3>Developpeur</h3></div>
-                      <div class="typewriter tw6"><h3>Designer</h3></div>
-                    </section>
-                    -->
+                  </div>
+                  <div class="img-form">
+                    <img src="medias/images/logo_bright.svg" alt="drawn portrait of christelle Barret by Crypto Beasty">
                   </div>
               </div>
