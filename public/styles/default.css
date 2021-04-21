@@ -148,7 +148,7 @@ h4 {
   text-transform: uppercase; }
 
 img {
-  filter: drop-shadow(0 0 1rem black);
+  filter: drop-shadow(0 0 1rem #020202);
   height: 100%; }
 
 /* -------------------------------------- LAYOUT -------------------------------------- */
@@ -190,17 +190,15 @@ header {
 /*  BT-Tools / Modal ***** */
 #minimodal {
   width: 300px;
-  border-radius: 10px 10px 10px 10px;
-  font-size: 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
   overflow: visible;
   background-color: rgba(233, 230, 213, 0.5);
+  padding: 0.5rem;
   opacity: 0;
   display: none;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3 ease-in-out; }
-  #minimodaldiv {
-    margin: 0;
-    padding: 6%; }
 
 #minimodal.fade {
   opacity: 1;
@@ -319,7 +317,7 @@ svg.checkbox .is_unchecked {
       /* padding for links */
       margin-top: 1rem;
       font-family: "BalsamiqSans-Regular";
-      color: black;
+      color: #020202;
       text-transform: uppercase;
       text-decoration: none;
       display: block; }
@@ -419,8 +417,9 @@ main {
   justify-content: space-around; }
   .row .img-card {
     width: 30%;
+    height: 112.70%;
     margin: 0 8%; }
-    .row .img-cardimg {
+    .row .img-card img {
       max-width: 100%; }
   .row .card-body section {
     margin: auto 0;
@@ -520,6 +519,12 @@ fieldset input, fieldset textarea {
   border-radius: 6px;
   color: #C9D5D5;
   border: none; }
+fieldset .submit {
+  width: 30%;
+  color: #d6a956; }
+fieldset .submit:hover {
+  background-color: rgba(214, 169, 86, 0.6);
+  color: #020202; }
 
 /* ------ FIN PAGE FORMULAIRE ---------------------------------------------------------------------------- */
 /* ***** FIN MAIN ***** */
@@ -541,19 +546,45 @@ footer {
     display: inline-block;
     text-align: center;
     margin: 0;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem; }
+  .footer-mentions .login {
+    cursor: no-drop; }
 
 /* ***** FIN FOOTER ***** */
 /* ***** THEMES ***** */
 .dark-mode {
   background: none;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 100%);
-  color: black; }
-  .dark-mode a {
-    color: black; }
-  .dark-mode img {
-    filter: none;
-    height: 100%; }
+  background: linear-gradient(-45deg, #9b9b9b 3%, #646464 13%, #4e4e4e 24%, #646464 30%, #9b9b9b 41%, #979797 50%, #979797 61%, #9b9b9b 74%, #646464 81%, #3f3f3f 87%, #4e4e4e 100%);
+  /* Body animation*/
+  background-attachment: fixed;
+  background-size: 200% 200%;
+  animation: gradient 180s ease infinite;
+  animation-direction: alternate;
+  color: #020202; }
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+  .dark-mode header .logo {
+    width: 85px; }
+  .dark-mode header .social-header {
+    width: 75px; }
+  .dark-mode header .logo, .dark-mode header .social-header, .dark-mode header #minimodal {
+    background-color: rgba(0, 20, 20, 0.4);
+    border-radius: 6px;
+    padding: 0.3rem; }
+  .dark-mode header #minimodal label {
+    color: #C9D5D5; }
+  .dark-mode header .site-nav a {
+    color: #020202; }
+  .dark-mode header .site-nav a:hover {
+    color: #13AFF0; }
+  .dark-mode h4, .dark-mode .footer-mentions a {
+    color: #020202; }
 
 /* ***** FIN THEMES ***** */
 /* -------------------------------------- MEDIA QUERIES -------------------------------------- */
@@ -633,11 +664,6 @@ footer {
           margin-left: 3em;
           margin-top: 0;
           color: #C9D5D5; }
-
-  .site-nav a:hover, .site-nav a:focus, .site-nav a:active {
-    /* Changes font color to light blue */
-    font-weight: 800;
-    color: #13AFF0; }
 
   form {
     width: 60%; } }

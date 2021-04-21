@@ -43,6 +43,7 @@
      </header>
 <!-- ***** CONTENT ***** -->
      <div class="wrapper"> 
+    
           <main>
                <?php echo $content; ?>     
           </main>
